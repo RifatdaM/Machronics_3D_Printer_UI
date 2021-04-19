@@ -407,9 +407,132 @@ h4 {
   .main__right img {
     width: 55%;
   }
-  .main .glide__arrows{
+  .main .glide__arrows {
     display: none;
   }
+}
+
+/* Collection */
+.section {
+  padding: 3rem 0;
+}
+.collection {
+  margin: 3rem 0;
+}
+.collection__container {
+  width: 100%;
+  padding: 0 1.6rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  flex: 0 0 48%;
+  height: 30rem;
+  background-color: var(--color-primaty-superlight);
+}
+.collection__box:not(:last-child) {
+  margin: 1.6rem;
+}
+.img__container {
+  width: 25rem;
+  text-align: center;
+}
+.collection__box img.collection_01 {
+  width: 60%;
+}
+.collection__box img.collection_01 {
+  width: 85%;
+}
+.collection__content {
+  flex: 0 0 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colelction__content span {
+  color: var(--color-text-dark);
+}
+.collection__content h2 {
+  margin-top: 0.5rem;
+  color: var(--color-text-dark);
+}
+.collection__content a:link,
+.collection__content a:visited {
+  font-family: bebas, "Poppins", sans-serif;
+  display: block;
+  padding: 1rem 1.4rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  color: var(--color-primaty);
+  border: 2px solid var(--color-primaty);
+  transition: all 0.3s ease-in-out;
+}
+.collection__content a:hover {
+  background-color: var(--color-primaty);
+  color: var(--color-text-light);
+  /* border: none; */
+}
+
+/* collection responsive */
+@media only screen and (max-width: 999px) {
+  .collection__container {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 65rem;
+  }
+
+  .collection__box{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .collection__box:not(:last-child){
+    margin: 0 0 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .collection{
+    margin: 0;
+    position: relative;
+  } 
+  .collection__container {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    height: 50rem;
+    justify-content: space-around;
+  }
+  .collection__box{
+    justify-content: space-around;
+    height: 15rem;
+  }
+  .collection__content{
+    flex: 0 0 30%;
+  }
+  .collection__data span{
+    font-size: 1.2rem;
+  }
+  .collection__data span{
+    font-size: 1.4rem;
+  }
+}
+
+/* Letest Product */
+.title__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+  
 }
 
 /* Button */
