@@ -588,74 +588,144 @@ h4 {
 @media only screen and(max-width:568px) {
   .title__container {
     flex-direction: column;
+    margin: 0 0 2rem;
   }
-  .section__titles:not(:last-child){
-margin: 0 0 1.3rem;
-  }
+  /* .primary__title{
+    
+  } */
 }
-.product{
+.product {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 25rem;
 }
 
-.product__header{
+.product__header {
   height: 25rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   text-align: center;
 }
-.product__header img{
+.product__header img {
   max-width: 100%;
   max-height: 100%;
 }
-.product__footer{
+.product__footer {
   padding: 1rem 0;
 }
-.product__footer .product__price{
+.product__footer .product__price {
   padding: 1rem;
 }
-.product__footer h4{
+.product__footer h4 {
   padding: 1rem 0;
 }
-.rating svg{
+.rating svg {
   width: 1.6rem;
   height: 1.5rem;
   fill: var(--color-primaty);
 }
 .letest__product .glide__arrow,
-.related__products .glide__arrow{
-background-color: transparent;
-border: 1px solid var(--color-primaty);
-outline: none;
-border-radius:0 ;
-box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0);
-top: -7%;
-left: 80% ;
+.related__products .glide__arrow {
+  background-color: transparent;
+  border: 1px solid var(--color-primaty);
+  outline: none;
+  border-radius: 0;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0);
+  top: -7%;
+  left: 80%;
 }
 
 .letest__product .glide__arrow:hover,
-.related__products .glide__arrow:hover{
+.related__products .glide__arrow:hover {
   background-color: var(--color-primaty);
   border: 1px solid var(--color-text-light);
 }
 .letest__product .glide__arrow--left,
-.related__products .glide__arrow--left{
- left: 75%;
+.related__products .glide__arrow--left {
+  left: 75%;
 }
 .letest__product .glide__arrow--right,
-.related__products .glide__arrow--right{
- right: 5%;
+.related__products .glide__arrow--right {
+  right: 5%;
 }
 .letest__product .glide__arrow svg,
-.related__products .glide__arrow svg{
-width: 1.5rem;
-height: 1.5rem;
-fill: var(--color-primaty);
+.related__products .glide__arrow svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--color-primaty);
 }
 .letest__product .glide__arrow:hover svg,
-.related__products .glide__arrow:hover svg{
-fill: var(--color-text-light);
+.related__products .glide__arrow:hover svg {
+  fill: var(--color-text-light);
+}
+
+/* resopnsive letest product */
+@media only screen and (max-width: 999px) {
+  .product__header {
+    height: 25rem;
+  }
+  .product {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .letest__product .glide__arrow,
+  .related__products .glide__arrow {
+    top: -3%;
+  }
+  .letest__product .glide__arrow--left,
+  .related__products .glide__arrow--left {
+    left: 73%;
+  }
+  .letest__product .glide__arrow--right,
+  .related__products .glide__arrow--right {
+    right: 7%;
+  } 
+}
+@media only screen and (max-width: 768px) {
+  .letest__product .glide__arrow--left,
+  .related__products .glide__arrow--left {
+    left: 72%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .product__header{
+    height: 20rem;
+  }
+  .product__header img{
+    width: 50%;
+  }
+  .product__footer h3{
+    font-size: 1.4rem;
+  }
+  .product__btn{
+    width: 100%;
+    font-size: 1rem;
+    padding: .8rem 0;
+    border: 1px solid var(--color-primaty);
+  }
+  .product ul{
+    top:25%;
+    left: 50%;
+    width: 16rem;
+    height: 4rem;
+  }
+  .rating svg{
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .letest__product .glide__arrow--left,
+  .related__products .glide__arrow--left {
+    left: 66%;
+  }
+  
+}
+@media only screen and (max-width: 468px){
+  .product__header{
+    height: 12rem;
+  }
+  .product__footer h3{
+    font-size: 1.2rem;
+  }
 }
 
 /* Button */
@@ -705,7 +775,7 @@ fill: var(--color-text-light);
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.product__btn{
+.product__btn {
   display: inline-block;
   font-family: bebas, "Poppins", sans-serif;
   text-transform: uppercase;
@@ -717,10 +787,10 @@ fill: var(--color-text-light);
   font-size: 2rem;
   cursor: pointer;
 }
-.product__btn:focus{
+.product__btn:focus {
   outline: none;
 }
-.product__btn:hover{
+.product__btn:hover {
   background-color: var(--color-primaty);
   color: var(--color-text-light);
   transition: all 0.2s ease-in-out;
